@@ -3,6 +3,7 @@
 **Course:** CSE 445 — Computer Vision | East West University
 **Instructor:** Dr. Md Rifat Ahmmad Rashid, Associate Professor
 **Model:** YOLOv26s-Pose (fine-tuned) · **Trackers:** ByteTrack & BoT-SORT
+**Kaggle Notebook:** [CSE445 Assignment 2 — Cow Pose Estimation](https://www.kaggle.com/code/archariox/cse445-assignment-02-kaggle)
 
 A complete pose estimation and multi-object tracking pipeline applied to cattle video. The pipeline fine-tunes a YOLOv26s-Pose model on a 26-keypoint cow dataset, runs frame-by-frame keypoint prediction on a source video, and compares two tracking strategies side by side.
 
@@ -218,15 +219,28 @@ Both trackers run on the same fine-tuned model, same source video (38,996 frames
 | frame_rate | 30 | 30 |
 | Association | IoU only | IoU + Re-ID appearance |
 
-### ByteTrack Output
+### Output Videos
 
-[![ByteTrack Demo](https://img.youtube.com/vi/o9q1gXvoTck/maxresdefault.jpg)](https://youtu.be/o9q1gXvoTck)
-> 📺 Click the thumbnail to watch on YouTube
-
-### BoT-SORT Output
-
-[![BoT-SORT Demo](https://img.youtube.com/vi/QqU86fe3ReM/maxresdefault.jpg)](https://youtu.be/QqU86fe3ReM)
-> 📺 Click the thumbnail to watch on YouTube
+<table>
+  <tr>
+    <th align="center">🔵 ByteTrack</th>
+    <th align="center">🔴 BoT-SORT</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://youtu.be/o9q1gXvoTck">
+        <img src="https://img.youtube.com/vi/o9q1gXvoTck/maxresdefault.jpg" width="100%" alt="ByteTrack Demo"/>
+      </a>
+      <br/>📺 <a href="https://youtu.be/o9q1gXvoTck">Watch on YouTube</a>
+    </td>
+    <td align="center">
+      <a href="https://youtu.be/QqU86fe3ReM">
+        <img src="https://img.youtube.com/vi/QqU86fe3ReM/maxresdefault.jpg" width="100%" alt="BoT-SORT Demo"/>
+      </a>
+      <br/>📺 <a href="https://youtu.be/QqU86fe3ReM">Watch on YouTube</a>
+    </td>
+  </tr>
+</table>
 
 ### Tracker Comparison
 
@@ -350,6 +364,8 @@ output/results/
 ---
 
 ## 🚀 How to Run
+
+> **Alternative:** Run directly on Kaggle — [Open Notebook](https://www.kaggle.com/code/archariox/cse445-assignment-02-kaggle). The dataset is pre-linked and GPU is available without local setup.
 
 ### 1. Clone the repository
 ```bash
