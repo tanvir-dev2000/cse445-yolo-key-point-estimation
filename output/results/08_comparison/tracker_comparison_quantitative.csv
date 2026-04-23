@@ -1,0 +1,7 @@
+Metric,ByteTrack,BoT-SORT
+Unique IDs (↓ better),285.0,407.0
+Avg Tracks/Frame,0.8445481587855165,0.8724484562519232
+Max Tracks/Frame,5.0,5.0
+Est. ID Switches (↓ better),1633.0,1789.0
+Track Continuity (↑ better),0.0029633268729316368,0.002143608000618976
+Mean Box Confidence,0.3258309010467855,0.457284422169903
